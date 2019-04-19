@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Accordion from './components/accordion';
 
 class App extends Component {
   render() {
+    // co the dong mo the nhu html binh thuong va noi dung ben trong se thuoc childer hay props.children
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className = "App">
+        <Accordion heading = "Heading">
+          Lorems demo
+        </Accordion>
+        <Accordion heading = "Heading 2" content = "Lorems demo 2" />
       </div>
     );
   }
